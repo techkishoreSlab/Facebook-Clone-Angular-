@@ -1,0 +1,57 @@
+<div class="container mx-auto ">
+    <div class="post-form">
+    <h2>Create a New Post</h2>
+    <form>
+      <!-- Set ngModelOptions to define it as 'standalone' -->
+<textarea [(ngModel)]="newPost.text" [ngModelOptions]="{ standalone: true }" placeholder="Enter your post text"></textarea>
+
+      <input type="file" (change)="onFileSelected($event)" accept="image/*" />
+      <button (click)="submitPost()">Submit</button>
+    </form>
+    </div>
+
+
+    <div class="post container rounded-3xl" *ngFor="let post of posts">
+    <div class="header">
+      <img class="avatar w-8 h-8 rounded-full mx-5" src="../../assets/image/Elon_Musk_Colorado_2022_(cropped2).jpg" alt="User Avatar" />
+      <div class="user-info mt-5">
+        <p class="user-name">Elon Musk</p>
+        <p class="post-time">Posted Just Now</p>
+      </div>
+    </div>
+
+    <div class="post-content justify-center w-96">
+        <div class="mx-5">
+            <p class="font-bold">{{ post.text }}</p>
+        </div>
+      
+      <img *ngIf="post.image" [src]="post.image" alt="Post Image" class="post-image" />
+    </div>
+    
+    <div class="actions flex justify-between items-center mx-5">
+      <div class="like" (click)="likePost(post)">
+        <i class="fa fa-thumbs-up text-5xl"></i>
+        <span>Like</span>
+      </div>
+      <div class="comment" (click)="commentPost(post)">
+        <i class="fa fa-comment text-xl"></i>
+        <span>Comment</span>
+      </div>
+      <div class="share" (click)="sharePost(post)">
+        <i class="fa fa-share text-xl"></i>
+        <span>Share</span>
+      </div>
+      <div class="delete" (click)="deletePost(post)">
+        <i class="fa fa-trash text-xl"></i>
+        <span>Delete</span>
+      </div>
+    </div>
+    <div class="like-comment-share-counts flex justify-center items-center mx-5">
+      <p class="text-xl">{{ post.likeCount }} Likes</p>
+      <p class="text-xl">{{ post.commentCount }} Comments</p>
+      <p class="text-xl">{{ post.shareCount }} Shares</p>
+    </div>
+    </div>
+</div>
+
+  

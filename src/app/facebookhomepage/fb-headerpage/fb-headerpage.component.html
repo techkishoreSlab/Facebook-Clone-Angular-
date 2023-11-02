@@ -1,0 +1,103 @@
+<header class="bg-white fixed top-0 left-0 right-0 z-40">
+    <div class="flex justify-between items-center">
+        <div class="left ml-5 my-1 flex">
+            <div>
+                <p class="font-bold text-blue-700 text-2xl sm:hidden">𝗳𝗮𝗰𝗲𝗯𝗼𝗼𝗸</p>
+                <i class=" hidden sm:block cursor-pointer  text-4xl text-blue-600 fa-brands fa-facebook"></i>
+            </div>
+            <div class="ml-3 hidden md:block">
+                
+                <i class="absolute text-gray-500 ml-5 mt-3 fa-solid fa-magnifying-glass"></i>
+                <input class=" rounded-full  border border-gray-100 bg-gray-100" type="text"  placeholder="       Search Facebook">
+            </div>
+        </div>
+        
+        <div>
+            <div class="flex center justify-center">
+                <div class="mx-5">
+                    <i class=" cursor-pointer text-blue-500 text-xl fa-solid fa-house"></i>
+                    <hr class="border-t-2 border-blue-500">
+                </div>
+                <div class="hover:bg-gray-100 w-10 h-8 rounded-lg cursor-pointer ">
+                    <i class=" m-2 -my-0  fa-solid text-gray-400 text-xl fa-user-group"></i>
+                </div>
+                <div class="ml-2 hover:bg-gray-100 w-10 h-8 rounded-lg cursor-pointer ">
+                    <svg fill="currentColor" viewBox="0 0 24 24"  class="w-6 ml-2 mt-0.5 text-gray-400 x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xxk0z11 xvy4d1p"><path d="M12 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm-2 4a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path><path d="M.5 12C.5 5.649 5.649.5 12 .5S23.5 5.649 23.5 12 18.351 23.5 12 23.5.5 18.351.5 12zm2.21-2a9.537 9.537 0 0 0 0 3.993l.3.007A2 2 0 0 0 3 10h-.29zm.663-1.983a4 4 0 0 1 0 7.966 9.523 9.523 0 0 0 1.948 2.773A5.002 5.002 0 0 1 10 15.523h4a5.002 5.002 0 0 1 4.679 3.233 9.523 9.523 0 0 0 1.948-2.773 4 4 0 0 1 0-7.966A9.501 9.501 0 0 0 12 2.5a9.501 9.501 0 0 0-8.627 5.517zM21.5 12a9.55 9.55 0 0 0-.212-2.007l-.265.007H21a2 2 0 0 0-.01 4l.3-.007c.138-.643.21-1.31.21-1.993zM12 21.5a9.455 9.455 0 0 0 4.97-1.402A3 3 0 0 0 14 17.523h-4a3 3 0 0 0-2.97 2.575A9.456 9.456 0 0 0 12 21.5z"></path></svg>
+                </div>
+                <div class="hover:bg-gray-100 w-10 h-8 rounded-lg cursor-pointer">
+                    <i class=" text-gray-400 mt-0.5 mx-3 text-xl fa-solid fa-bars"></i>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="right mr-5 flex items-center">
+            <div class="cursor-pointer mx-5 bg-gray-200 w-8 h-8 rounded-full hidden md:block ">
+                <i class=" text-xl ml-2 mt-0.5 fa-solid fa-plus"></i>
+            </div>
+            <div class="cursor-pointer bg-gray-200 w-8 h-8 rounded-full hidden md:block">
+                <i class=" ml-1.5 mt-0.5 text-xl fa-brands fa-facebook-messenger"></i>
+            </div>
+            <div class=" cursor-pointer mx-5 bg-gray-200 w-8 h-8 rounded-full hidden md:block">
+                <i class="text-xl ml-2 fa-solid fa-bell"></i>
+            </div>
+            <div class="sm:hidden bg-gray-200 mx-5 w-10 rounded-full">
+                <i class="fa-solid fa-magnifying-glass text-gray-400 text-xl ml-2"></i>
+            </div>
+            <div>
+                <img class=" cursor-pointer w-10 h-10 rounded-full" (click)="toggleMenu()" src="../../assets/image/Elon_Musk_Colorado_2022_(cropped2).jpg">
+            </div>
+        </div>
+    </div>
+    <div class="sub-menu-wrap" id="subMenu" [ngClass]="{'open-menu': isMenuOpen}">
+        <div class="sub-menu bg-white rounded-lg">
+            <div class="bg-white px-5 py-2 rounded-lg  shadow-md ">
+                <div class="flex gap-5  items-center">
+                    <img class=" cursor-pointer w-10 h-10 rounded-full" src="../../assets/image/Elon_Musk_Colorado_2022_(cropped2).jpg">
+                    <h2 class="font-semibold">Elon Musk</h2>
+                </div>
+                <hr class="border-t-2 mt-2 border-gray-300">
+                <div class="flex justify-between items-center">
+                    <p class="text-blue-600 font-semibold cursor-pointer">See all profiles</p>
+                    <button class="bg-red-600  py-0.5 px-2 rounded-xl mt-1 text-white">50+</button>
+                </div>
+                
+            </div>
+            
+            
+            
+                <a href="#" class=" sub-menu-link">
+                    <img   src="../../../assets/image/profile.png">
+                    <p>Edit Profile</p>
+                    <span class="font-semibold">></span>
+                </a>
+
+                <a href="#" class="sub-menu-link">
+                    <img   src="../../../assets/image/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span class="font-semibold">></span>
+                </a>
+                
+                <a href="#" class="sub-menu-link">
+                    <img   src="../../../assets/image/help.png">
+                    <p>Help & Support</p>
+                    <span class="font-semibold">></span>
+                </a>
+
+                <a href="#" class="sub-menu-link">
+                    <div class="bg-gray-200 w-12 h-auto rounded-full flex ">
+                        <i class="fa-solid fa-moon text-xl flex justify-center ml-2.5 mt-1"></i>
+                    </div>
+                    <p class="ml-7">Display & accessibility</p>
+                    <span class="font-semibold">></span>
+                </a>
+
+                <a href="#" class="sub-menu-link">
+                    <img   src="../../../assets/image/logout.png ">
+                    <p>Logout</p>
+                    
+                </a>
+        </div>
+    </div>
+    
+</header>

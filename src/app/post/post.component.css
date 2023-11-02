@@ -1,0 +1,137 @@
+/* post.component.css */
+.post-form {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 16px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-form h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .post-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .post-form textarea {
+    resize: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .post-form input[type="file"] {
+    margin-bottom: 10px;
+  }
+  
+  .post-form button {
+    background-color: #0174DA;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .post-form button:hover {
+    background-color: #015bba;
+  }
+  
+  .post {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-info {
+    flex: 1;
+  }
+  
+  .user-name {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .post-time {
+    color: #888;
+    font-size: 14px;
+  }
+  
+  .post-content {
+    margin-bottom: 10px;
+  }
+  
+  .post-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .like, .comment, .share, .delete {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .like:hover, .comment:hover, .share:hover, .delete:hover {
+    text-decoration: underline;
+  }
+  
+  .like i, .comment i, .share i, .delete i {
+    margin-right: 5px;
+  }
+  
+  .like span, .comment span, .share span, .delete span {
+    font-weight: bold;
+  }
+  
+  .like i {
+    color: #0174DA;
+  }
+  
+  .comment i {
+    color: #888;
+  }
+  
+  .share i {
+    color: #25D366;
+  }
+  
+  .delete i {
+    color: #FF0000;
+  }
+  
+  .like-comment-share-counts {
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
